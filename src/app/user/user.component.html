@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>Teste Oficina5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<body class="w3-amber">
+
+    <div class="w3-content" style="max-width:1400px">
+
+        <div class="w3-row">
+
+            <div class="w3-col">
+
+                <div class="w3-card-4 w3-margin w3-white">
+
+                    <div class="w3-container">
+
+                        <h3><b>User '{{user.username}}':</b></h3>
+                        <hr>
+                        <h5><b>Name: <span class="w3-opacity">{{user.name}}</span></b></h5>
+                        <h5><b>E-mail: <span class="w3-opacity">{{user.email}}</span></b></h5>
+                        <h5><b>Phone: <span class="w3-opacity">{{user.phone}}</span></b></h5>
+                        <h5><b>Website: <span class="w3-opacity">{{user.website}}</span></b></h5>
+                        <hr>
+
+                        <h4><b>Address</b></h4>
+                        <hr>
+                        <h5><b>Street: <span class="w3-opacity">{{user.address.street}}</span></b></h5>
+                        <h5><b>Number: <span class="w3-opacity">{{user.address.suite}}</span></b></h5>
+                        <h5><b>City: <span class="w3-opacity">{{user.address.city}}</span></b></h5>
+                        <h5><b>Zipcode: <span class="w3-opacity">{{user.address.zipcode}}</span></b></h5>
+                        <hr>
+
+                        <h4><b>Company</b></h4>
+                        <hr>
+                        <h5><b>Name: <span class="w3-opacity">{{user.company.name}}</span></b></h5>
+                        <h5><b>Catchphrase: <span class="w3-opacity">{{user.company.catchPhrase}}</span></b></h5>
+                        <h5><b>Bs: <span class="w3-opacity">{{user.company.bs}}</span></b></h5>
+
+                        <hr>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+            <button onclick="window.location.href=''"
+                class="w3-button w3-black w3-padding-large w3-margin-bottom">Back</button>
+        </footer>
